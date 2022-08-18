@@ -1,0 +1,6 @@
+<app-list-item *ngFor="let listItem of getFavouriteTasks(true)" [listItem]="listItem"></app-list-item>
+<app-list-item *ngFor="let listItem of getFavouriteTasks(false)" [listItem]="listItem"></app-list-item>
+<div *ngIf="todoList.length == 0" class="info-message">
+  They are no tasks in this list!
+</div>
+
